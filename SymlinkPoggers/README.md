@@ -1,7 +1,5 @@
 # Reusing the same Songs / Replays / Playlists and whatnot folders for multiple versions
 
----
-
 Tend to switch between multiple versions and dont want to move or copy around your Songs etc? Fear not, thanks to ✨ Symlinks 🌟
 
 1. Create a Folder somewhere outside of your game install ***on the same drive as the game***
