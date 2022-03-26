@@ -7,7 +7,7 @@ Tend to switch between multiple versions and dont want to move or copy around yo
 
 ![Data Folder](folder.jpg)
 
-3. Create / Save [The Script](linkscript.bat) which links these folders in place of where they should be in the game install. For this example, the game is installed in `E:/SteamApps/common/Beat Saber` and the things I want to reuse are in `E:/BS_STUFF`. Ideally you probably want to save it alongside the fildes which you are linking.
+3. Create / Save [The Script](linkscript.bat) which links these folders in place of where they should be in the game install. For this example, the game is installed in `E:/SteamApps/common/Beat Saber` and the things I want to reuse are in `E:/BS_STUFF`. Ideally you probably want to save it alongside the folders which you are linking.
 
 4. Success!
 
