@@ -11,19 +11,28 @@ if %errorLevel% == 0 (
   echo Admin required
 )
 
+echo Press any key to continue exit
+
 pause > nul
 
 :rm_and_link
 	set gamepath="%BS_FOLDER:"=%\%~1"
 
 	:: If there already is a link in that place, or an empty folder (Links turn into empty folders when copying the base folder), delete it
-	rmdir %gamepath%
-	if %errorlevel% == 0 || %errorlevel% == 2 (
-		mklink /J %gamepath% "%~2"
+	rmdir %gamepath% >nul 2>&1
+	if %errorlevel% == 0 (
+		mklink /J %gamepath% "%~2" >nul 2>&1
+	) else if %errorlevel% == 2 (
+		mklink /J %gamepath% "%~2" >nul 2>&1
+
 	) else if %errorlevel% == 145 (
-		echo "Couldnt link %gamepath% - A folder at that destination exists which is not empty"
+		echo Couldnt link %gamepath% - A folder at that destination exists which is not empty
 		exit /b %errorlevel%
+	)
+
+	if %errorlevel% == 0 (
+		echo Linked "%~1" to "%~2"
 	) else (
-		echo "Couldnt link %gamepath% - Unknown Error"
+		echo Couldnt link %gamepath% - Unknown Error
 		exit /b %errorlevel%
 	)
