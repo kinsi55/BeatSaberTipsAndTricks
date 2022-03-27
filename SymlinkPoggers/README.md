@@ -9,7 +9,7 @@ Tend to switch between multiple versions and dont want to move or copy around yo
 
 3. Create / Save [The Script](linkscript.bat?raw=true) (Right click -> Save Destination, **Make sure to save it as .bat❗**) which links these folders in place of where they should be in the game install. For this example, the game is installed in `E:/SteamApps/common/Beat Saber` and the things I want to reuse are in `E:/BS_STUFF`. Ideally you probably want to save it alongside the folders which you are linking.
 
-4. Success!
+4. Run it as admin and ideally, Success!
 
 ![Created Link screenshot](createdjunction.jpg)
 
