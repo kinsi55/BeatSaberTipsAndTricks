@@ -6,7 +6,7 @@ net session >nul 2>&1
 if %errorLevel% == 0 (
 	CALL :rm_and_link "Beat Saber_Data\CustomLevels","E:\BS_STUFF\Songs"
 	CALL :rm_and_link "UserData\ScoreSaber\Replays","E:\BS_STUFF\Replays"
-	REM You can add more entries like the above here for other folders you want to linkYou can add more entries like the above here for other folders you want to link
+	REM You can add more entries like the above here for other folders you want to link
 ) else (
   echo Admin required
 )
